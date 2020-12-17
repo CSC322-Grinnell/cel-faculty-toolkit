@@ -1,0 +1,120 @@
+<% provide(:title, "Syllabi") %>
+<div class = "main-center">
+<h1>Syllabi Database</h1>
+</div>
+<!--Scroll Button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span class='glyphicon glyphicon-chevron-up fa-1x'></button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h4><b>IS 3012: Service Learning in International Studies:</b></h4>
+      <div>
+        <small>Click image to open pdf.</small>
+           <%= link_to image_tag("Syllabi-IS 3012.png", class: "preview-image"), "/cel-faculty-toolkit/Documents/62079406_syllabus_cel_with_refugees_and_immigrants_in_iowa_s20_gerlach_-_share.pdf"%>
+      </div>
+      <div style="font-size:1.0em"><b>Faculty: </b> Peter Gerlach</div>
+      <div style="font-size:1.0em"><b>Department: </b>Anthropology</div>
+      <div style="font-size:1.0em">Community Engaged Learning with Refugees and Immigrants in Iowa</div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h4><b>GDS 395 – Sustainable Development in Costa Rica</b></h4>
+      <div>
+        <small>Click image to open.</small>
+           <%= link_to image_tag("GDS 395.png", class: "preview-image"), "/cel-faculty-toolkit/Documents/Costa Rica Com Dev Course Packet.pdf"%>
+      </div>
+      <p>
+      </p>
+      <div style="font-size:1.0em"><b>Faculty: </b> Monty Roper</div>
+      <div style="font-size:1.0em"><b>Department: </b>Global Development Studies</div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h4><b>French 295: Noir·e en France: Racism and Antiracism in Contemporary Metropolitan France</b></h4>
+      <div>
+        <small>Click image to open.</small>
+           <%= link_to image_tag("FREN 295", class: "preview-image"), "/cel-faculty-toolkit/Documents/FR295_Syllabus_Automne2020.pdf"%>
+      </div>
+      <p>
+      </p>
+      <div style="font-size:1.0em"><b>Faculty: </b> Marion Tricoire</div>
+      <div style="font-size:1.0em"><b>Department: </b>French</div>
+    </div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h4><b>GWS 395: Lgbt Oral Histories og Central Iowa</b></h4>
+      <div>
+        <small>Click image to open.</small>
+           <%= link_to image_tag("GWS-395.png", class: "preview-image"), "/cel-faculty-toolkit/Documents/LOHCI2020Syll.pdf"%>
+      </div>
+      <p>
+      </p>
+      <div style="font-size:1.0em"><b>Faculty: </b> AJ Lewis</div>
+      <div style="font-size:1.0em"><b>Department: </b>Gender, Women's and Sexuality Studies</div>
+    </div>
+  </div>
+  
+  
+  <div class="column">
+    <div class="card">
+      <h4><b>ANT-293: Practicing Anthropology</b></h4>
+      <div>
+        <small>Click image to open.</small>
+           <%= link_to image_tag("ANT-293.png", class: "preview-image"), "/cel-faculty-toolkit/Documents/LOHCI2020Syll.pdf"%>
+      </div>
+      <p>
+      </p>
+      <div style="font-size:1.0em"><b>Faculty: </b> Monty Roper</div>
+      <div style="font-size:1.0em"><b>Department: </b>Anthropology</div>
+      <div style="font-size:1.0em">Applying Anthropology in the Community</div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <h4><b>SPN 320: Latinxs in the US: Issues for Social Change</b></h4>
+      <div>
+        <small>Click image to open.</small>
+           <%= link_to image_tag("SPN 320.png", class: "preview-image"), "/cel-faculty-toolkit/Documents/Syllabus SPN 320 - Valentin.pdf"%>
+      </div>
+      <p>
+      </p>
+      <div style="font-size:1.0em"><b>Faculty: </b> Carmen Valentín</div>
+      <div style="font-size:1.0em"><b>Department: </b>Spanish</div>
+    </div>
+  </div>
+</div>

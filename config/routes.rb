@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   get '/implementation', to: 'static_pages#implementation'
   get '/assessment', to: 'static_pages#assessment'
   get '/professional_dev', to: 'static_pages#professional_dev'
+  get '/partners', to: 'static_pages#partners'
+  get '/syllabi', to: 'static_pages#syllabi'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

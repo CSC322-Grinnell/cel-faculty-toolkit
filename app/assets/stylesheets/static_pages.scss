@@ -63,9 +63,9 @@ $dark-purple: #20004B;
 
 }
 
-/*Glossary circle*/
+/*Community Partner circle*/
 
-#home_glossary_of_terms {
+#home_community_partner {
     width: 300px;
     float: left;
 
@@ -77,14 +77,19 @@ $dark-purple: #20004B;
         height: 230px;
         text-align: center;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
         color: $purple;
     }
+    div:hover{
+        color: #000;
+        text-decoration: underline;
+    }
+    
 }
 
 /*Search circle*/
 
-#home_search_by_topic {
+#home_faculty_toolkit {
     width: 300px;
     float: right;
 
@@ -96,18 +101,24 @@ $dark-purple: #20004B;
         width: 380px;
         height: 380px;
         text-align: center;
-        font-size: 40px;
+        font-size: 35px;
         color: $purple;
+    }
+    
+    div:hover{
+        color: #000;
+        text-decoration: underline;
     }
 
     .glyphicon {
-        font-size: 40px;
+        font-size: 45px;
     }
 }
 
 .glyphicon {
     font-size: 30px;
 }
+
 
 /*Styling for sections and subsections*/
 
@@ -206,7 +217,7 @@ $dark-purple: #20004B;
 
 @media screen and (max-width: 1215px) {
     /* Push down glossary so that it would not be obscured by title*/
-    #home_glossary_of_terms div {
+    #home_community_partner div {
         margin-top: -100px;
     }
 }
@@ -214,12 +225,16 @@ $dark-purple: #20004B;
 /* When collapsing browsers even more, decrease size of the two cirlces*/
 
 @media screen and (max-width: 1020px) {
-    #home_glossary_of_terms {
+    #home_community_partner {
         div {
             margin-right: -80px;
             width: 180px;
             height: 180px;
             font-size: 20px;
+        }
+        div:hover{
+            color: #000;
+            text-decoration: underline;
         }
 
         .glyphicon {
@@ -228,13 +243,18 @@ $dark-purple: #20004B;
 
     }
 
-    #home_search_by_topic {
+    #home_faculty_toolkit {
         div {
             margin-top: -60px;
             margin-right: -40px;
             width: 300px;
             height: 300px;
             font-size: 40px;
+        }
+        
+        div:hover{
+            color: #000;
+            text-decoration: underline;
         }
 
         .glyphicon {
@@ -250,7 +270,7 @@ $dark-purple: #20004B;
             line-height: 67px;
         }
 
-        #home_search_by_topic {
+        #home_faculty_toolkit {
             width: 300px;
             float: right;
 
@@ -259,6 +279,11 @@ $dark-purple: #20004B;
                 width: 200px;
                 height: 200px;
                 font-size: 25px;
+            }
+            
+            div:hover{
+                color: #000;
+                text-decoration: underline;
             }
 
             .glyphicon {
@@ -283,7 +308,7 @@ $dark-purple: #20004B;
             }
         }
 
-        #home_glossary_of_terms {
+        #home_community_partner {
             width: 300px;
             float: left;
 
@@ -293,6 +318,10 @@ $dark-purple: #20004B;
                 height: 140px;
                 font-size: 20px;
                 color: $purple;
+            }
+            div:hover{
+                color: #000;
+                text-decoration: underline;
             }
             .glyphicon {
                 font-size: 20px;

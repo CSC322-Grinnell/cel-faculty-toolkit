@@ -17,7 +17,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
-          <a class="dropdown-toggle">Toolkit<b class="caret"></b></a>
+          <a class="dropdown-toggle", href="what_is_cel">Toolkit<b class="caret"></b></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="what_is_cel">About</a></li>
             <li><a href="community_partnerships">Partnerships</a></li>
@@ -27,9 +27,11 @@
             <li><a href="professional_dev">Development</a></li>
           </ul>
         </li>
-       <li><%= link_to "Partners", glossary_path, class:'home_link' %></li>
-       <li><%= link_to "Syllabi", glossary_path, class:'home_link' %></li>
+
+       <li><%= link_to "Partners", partners_path, class:'home_link' %></li>
+       <li><%= link_to "Syllabi", syllabi_path, class:'home_link' %></li>
        <li><%= link_to image_tag("search.png", size: "20x20"), search_path%></li>
+
     </div>
   </div>
 </nav>

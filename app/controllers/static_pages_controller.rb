@@ -42,4 +42,10 @@ class StaticPagesController < ApplicationController
 
   def professional_dev
   end
+  
+  def partners
+  end
+  
+  def syllabi
+  end
 end
