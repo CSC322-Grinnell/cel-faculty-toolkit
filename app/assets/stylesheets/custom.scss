@@ -12,6 +12,7 @@ $light-lavender: #e5e2fa;
 
 body {
   padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 section {
@@ -479,3 +480,13 @@ https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp*/
     transform: scale(1.2);
 }
 
+.item img{
+  object-fit:cover;
+  height:600px !important;
+  width:1300px;
+}
+
+.carousel-inner {
+  /* make sure your .items will get correct height */
+  height: 100%;
+}

@@ -27,3 +27,78 @@
       community engaged teaching, scholarship, and mentorship.
    </p>
 </div>
+
+
+
+
+
+<div class="container">
+  <div id="abc" class="slide carousel" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="width: 100%; height: 600px">
+
+      <div class="item active">
+        <%= image_tag("slideshow 1.jpg", class:"img-responsive") %>
+        <div class="carousel-caption">
+          <h3>Image 1</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag("slideshow 2.jpg", class:"img-responsive") %>
+        <div class="carousel-caption">
+          <h3>Image 2</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <%= image_tag("slideshow 3.jpg", class:"img-responsive") %>
+        <div class="carousel-caption">
+          <h3>Image 3</h3>
+        </div>
+      </div>
+      
+      <div class="item">
+        <%= image_tag("slideshow 4.jpg", class:"img-responsive") %>
+        <div class="carousel-caption">
+          <h3>Image 4</h3>
+        </div>
+      </div>
+      
+       <div class="item">
+        <%= image_tag("slideshow 5.jpg", class:"img-responsive") %>
+        <div class="carousel-caption">
+          <h3>Image 5</h3>
+        </div>
+      </div>
+      
+      <div class="item">
+        <%= image_tag("slideshow 6.jpg", class:"img-responsive") %>
+        <div class="carousel-caption">
+          <h3>Image 6</h3>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#abc" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#abc" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
