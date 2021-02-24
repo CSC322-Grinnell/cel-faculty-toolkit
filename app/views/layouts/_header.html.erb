@@ -16,18 +16,17 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+       <li><%= link_to "About", about_path, class:'home_link' %></li>
+       <li><%= link_to "Partnerships", community_partnerships_path, class:'home_link' %></li>
+       <li><%= link_to "Faculty Development", professional_dev_path, class:'home_link' %></li>
        <li class="dropdown">
           <a class="dropdown-toggle", href="what_is_cel">Toolkit<b class="caret"></b></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="what_is_cel">About</a></li>
-            <li><a href="community_partnerships">Partnerships</a></li>
             <li><a href="course_design">Course Design</a></li>
             <li><a href="implementation">Implementation</a></li>
             <li><a href="assessment">Assessment</a></li>
-            <li><a href="professional_dev">Development</a></li>
           </ul>
         </li>
-
        <li><%= link_to "Partners", partners_path, class:'home_link' %></li>
        <li><%= link_to "Syllabi", syllabi_path, class:'home_link' %></li>
        <li><%= link_to image_tag("search.png", size: "20x20"), search_path%></li>
