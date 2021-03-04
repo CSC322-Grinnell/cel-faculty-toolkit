@@ -1,29 +1,12 @@
 <% provide(:title, "Home") %>
-<!-- home_title includes primary title and the search circle found in _home_title.erb-->
-<div class='row'>
-   <%= render 'layouts/home_title'%>
-</div>
-<hr style='opacity: 0;'>
-<!--Glossary circle-->
-<%= link_to(
-   raw("<div id='home_community_partner'>
-           <div class='circleBase'>
-               <span class='glyphicon glyphicon-briefcase'>
-               </span>
-               Community Partners
-           </div>
-       </div>"),
-   partners_path)
-   %>
-<!--Image-->
-<div class='home_image text-center col-md-3' >
-   <%= image_tag 'grinnell-students-doing-engaged-work.JPG', class:'home_image'%>
-</div>
+
+
+
 <!--Home summary description  -->
 <div class='home_summary'>
-   <p class="title"> A digital toolbox for faculty</p>
+   <p class="title"> A Digital Toolbox For Faculty</p>
    <p>
-      interested in, currently building, or reflecting on 
+      For faculty members interested in, currently building, or reflecting on 
       community engaged teaching, scholarship, and mentorship.
    </p>
 </div>
@@ -31,22 +14,18 @@
 
 <br><br><br><br>
 
+
 <div class="row">
   <div class="column">
-    <a href="what_is_cel"><%= image_tag "Alt Break Board walk.jpg"%></a>
-    <a href="partners"><%= image_tag "Alt Break board retreat.jpg"%></a>
-    <%= image_tag "thumbnail_MidWest Leaders.jpg"%>
-    <%= image_tag "Alt Break board grasses.jpg"%>
+    <a href="assessment"><%= image_tag "Alt Break board line (1).jpg"%></a>
+    <a href="professional_dev"><%= image_tag "thumbnail_MidWest Leaders.jpg"%></a>
   </div>
   <div class="column">
-    <a href="syllabi"><%= image_tag "thumbnail_Candyland Station Tour Group 2016.jpg"%></a>
-    <%= image_tag "thumbnail_20181004.bread.puppets.1370.jpg"%>
-    <%= image_tag "thumbnail_20160608butterflyCERA148.jpg"%>
-    <%= image_tag "thumbnail_20130906nightfall370.jpg"%>
+    <a href="course_design"><%= image_tag "thumbnail_20160608butterflyCERA148.jpg"%></a>
+    <a href="syllabi"><%= image_tag "thumbnail_20130906nightfall370.jpg"%></a>
   </div>
   <div class="column">
-    <a href="community_partnerships"><%= image_tag "Hibiscus Flowers Railway Express.jpg"%></a>
-    <%= image_tag "Alt Break board line (1).jpg"%>
-    <%= image_tag "view (2).jpg"%>
+    <a href="implementation"><%= image_tag "Alt Break board retreat.jpg"%></a>
+    <a href="partners"><%= image_tag "view (2).jpg"%></a>
   </div>
 </div>

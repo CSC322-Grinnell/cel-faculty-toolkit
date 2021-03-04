@@ -24,6 +24,16 @@ $dark-purple: #20004B;
     color: $dark-purple;
     padding-bottom: 10px;
 }
+.Center { 
+    width:200px; 
+    height:200px; 
+    position: fixed; 
+    background-color: blue; 
+    top: 50%; 
+    left: 50%; 
+    margin-top: -100px; 
+    margin-left: -100px; 
+} 
 
 /* Home Summary: description*/
 
@@ -32,10 +42,16 @@ $dark-purple: #20004B;
     font-family: Arial, serif;
     font-size: 17px;
     font-weight: 400;
-    margin-top: -90px;
-    width: 40%;
-    float: right;
-    margin-right: -20px;
+    margin-top: -100px;
+    margin-left: -100px;
+    text-align: left;
+    width: 500px;
+    height:200px; 
+    left: 50%;
+    position: absolute; 
+    padding-top: 40px;
+    
+
 
     p {
         text-align: end;
