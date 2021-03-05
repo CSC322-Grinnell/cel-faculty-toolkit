@@ -45,7 +45,7 @@ $dark-purple: #20004B;
     margin-top: -100px;
     margin-left: -100px;
     text-align: left;
-    width: 500px;
+    width: 600px;
     height:200px; 
     left: 50%;
     position: absolute; 
@@ -59,7 +59,7 @@ $dark-purple: #20004B;
 
     /* Inner class to add special style to "A digital toolbox"*/
     .title {
-        font-size: 35px;
+        font-size: 40px;
         font-weight: bold;
         color: #230F4F;
         p {
@@ -239,6 +239,31 @@ $dark-purple: #20004B;
     position: absolute;
 }
 
+}
+
+/* Image tagging for image tiles */
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h3 { 
+   position: absolute; 
+   top: 200px; 
+   left: 10px; 
+   width: 100%; 
+}
+
+.whiteTextOverride {
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 40px !important;
+}
+
+.purpleTextOverride {
+    color: purple !important;
+    font-weight: bold !important;
+    font-size: 50px !important;
 }
 
 /* UI CHANGES FOR DIFFERENT SCREEN SIZES*/

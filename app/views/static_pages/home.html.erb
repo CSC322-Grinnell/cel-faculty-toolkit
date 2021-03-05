@@ -1,6 +1,8 @@
 <% provide(:title, "Home") %>
 
-
+<!--Space at top  -->
+<p> </p>
+<br><br>
 
 <!--Home summary description  -->
 <div class='home_summary'>
@@ -12,20 +14,38 @@
 </div>
 
 
-<br><br><br><br>
+<br><br><br><br><br>
 
 
 <div class="row">
   <div class="column">
-    <a href="assessment"><%= image_tag "Alt Break board line (1).jpg"%></a>
-    <a href="professional_dev"><%= image_tag "thumbnail_MidWest Leaders.jpg"%></a>
+    <div class="image">
+      <a href="assessment" title="Students walking in field on Alt Break"><%= image_tag "Alt Break board line (1).jpg"%></a>
+      <h3 class="whiteTextOverride"> ASSESS</h3>
+    </div>
+    <div class="image">
+      <a href="professional_dev" title="Students at Professional Development"><%= image_tag "thumbnail_MidWest Leaders.jpg"%></a>
+      <h3 class="whiteTextOverride"> DEVELOP </h3>
+    </div>
   </div>
   <div class="column">
-    <a href="course_design"><%= image_tag "thumbnail_20160608butterflyCERA148.jpg"%></a>
-    <a href="syllabi"><%= image_tag "thumbnail_20130906nightfall370.jpg"%></a>
+    <div class="image">
+      <a href="course_design" title="People farming in field"><%= image_tag "thumbnail_20160608butterflyCERA148.jpg"%></a>
+      <h3 class="whiteTextOverride"> DESIGN </h3>
+    </div>
+    <div class="image">
+      <a href="syllabi" title="People watching sunset"><%= image_tag "thumbnail_20130906nightfall370.jpg"%></a>
+      <h3 class="whiteTextOverride"> SYLLABI </h3>
+    </div>
   </div>
   <div class="column">
-    <a href="implementation"><%= image_tag "Alt Break board retreat.jpg"%></a>
-    <a href="partners"><%= image_tag "view (2).jpg"%></a>
+    <div class="image">
+      <a href="implementation" title="Students in front of barn"><%= image_tag "Alt Break board retreat.jpg"%></a>
+      <h3 class="whiteTextOverride"> IMPLEMENT </h3>
+    </div>
+    <div class="image">
+      <a href="partners" title="Children gardening"><%= image_tag "view (2).jpg"%></a>
+      <h3 class="whiteTextOverride"> PARTNERS </h3>
+    </div>
   </div>
 </div>
