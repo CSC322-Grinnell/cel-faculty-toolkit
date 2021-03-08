@@ -248,13 +248,14 @@ $dark-purple: #20004B;
 }
 
 h3 { 
-   position: absolute; 
-   top: 200px; 
-   left: 10px; 
-   width: 100%; 
+   
 }
 
 .whiteTextOverride {
+    position: absolute; 
+    top: 200px; 
+    left: 10px; 
+    width: 100%; 
     color: white !important;
     font-weight: bold !important;
     font-size: 40px !important;
