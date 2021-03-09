@@ -187,8 +187,9 @@ footer {
 
 .sidenav {
   background-color: #C6C6CF;
+  border-radius: 2em;
   opacity: 0.9;
-  width: 290px;
+  width: 320px;
   /* Set the width of the sidebar */
   position: fixed;
   /* Fixed Sidebar (stay in place on scroll) */
@@ -196,7 +197,7 @@ footer {
   /* Stay on top */
   top: 120px;
   /* Stay at the top */
-  left: 0; // background-color: $maeve;
+  left: 1%; // background-color: $maeve;
   /* Black */
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -206,8 +207,8 @@ footer {
     padding: 10px;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 400;
-    color: black; //display: block;
+    font-weight: 800;
+    color: #20004B; //display: block;
   }
   /* When you mouse over the navigation links, change their color */
   a:hover {
