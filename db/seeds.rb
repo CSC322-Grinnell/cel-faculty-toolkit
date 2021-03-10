@@ -6,7 +6,7 @@
 require 'csv'
 
 # Read in a csv file called toolkit_database.csv under lib/seeds directory
-csv_text = File.read(Rails.root.join('lib', 'seeds', 'toolkit_database.csv'))
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'Toolkit.csv'))
 # Parse the csv
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 # Looping through the parsed data and create a database object from each row
@@ -14,9 +14,7 @@ csv.each do |row|
    t = Toolkit.new
    t.name = row['name']
    t.url = row['url']
-   t.category = row['category']
-   t.tags = row['tags']
-   t.key_terms = row['key_terms']
+   t.content = row['content']
    t.save
 end
 # Print the confirm statement

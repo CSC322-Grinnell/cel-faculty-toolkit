@@ -12,12 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2020_10_16_041249) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "toolkits", force: :cascade do |t|
-    t.string "name"
-    t.string "url"
-    t.integer "category"
-    t.string "tags"
-    t.string "key_terms"
+    t.text "name"
+    t.text "url"
+    t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
