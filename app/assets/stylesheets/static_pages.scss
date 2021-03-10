@@ -40,13 +40,13 @@ $dark-purple: #20004B;
 .home_summary {
     color: rgb(0, 0, 0);
     font-family: Arial, serif;
-    font-size: 17px;
+    font-size: 2.5vmin;
     font-weight: 400;
     margin-top: -100px;
     margin-left: -100px;
     text-align: left;
-    width: 600px;
-    height:200px; 
+    width: 60vmin;
+    height:10vmin; 
     left: 50%;
     position: absolute; 
     padding-top: 40px;
@@ -59,7 +59,7 @@ $dark-purple: #20004B;
 
     /* Inner class to add special style to "A digital toolbox"*/
     .title {
-        font-size: 40px;
+        font-size: 4vmin;
         font-weight: bold;
         color: #230F4F;
         p {
@@ -313,23 +313,6 @@ h3 {
 
             .glyphicon {
                 font-size: 20px;
-            }
-        }
-
-        .home_summary {
-            margin-right: 10px;
-            font-size: medium;
-            margin-top: -380px;
-            line-height: 20px;
-            width: 33%;
-
-            p {
-                .title {}
-            }
-            .title {
-                line-height: 40px;
-                font-size: 30px;
-                margin-left: 50px;
             }
         }
 
