@@ -68,6 +68,15 @@ li {
   width: 90%;
 }
 
+/* Class for every image tile on home page */
+.tile {
+  padding-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
 /* Class for home image*/
 .home_image {
   padding-top: 15px;
@@ -330,6 +339,7 @@ footer {
     width: 70%;
     float: left;
   }
+  
 }
 
 /* On phone screens*/
@@ -361,6 +371,7 @@ https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp*/
     float: left; //margin-top: 10px;
     margin-right: 0px; //margin-left: -50px;
   }
+  
 }
 
 // Partners page 
