@@ -1,23 +1,30 @@
 // Place all the styles related to the search controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-
-
 .search-result a {
     font-size: 20px;
     line-height: 1.2em;
     text-align: left;
     color: black;
     padding-top: 6px;
-  }
+}
 
 .search-result {
     font-size: 20px;
     line-height: 1.2em;
     text-align: left;
     color: black;
-    padding-top: 6px;
+    padding: 20px;
     margin-top: 25px;
+    // border: solid 2px black;
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 5px 5px 5px rgb(136, 136, 136);
+}
+
+.search-result:hover {
+    transform: scale(1.03);
+    transition: all 0.1s;
 }
 
 #query {

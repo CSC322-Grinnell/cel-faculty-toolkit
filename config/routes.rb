@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   resources :search, only: [:index]
   root 'static_pages#home'
   get '/glossary', to: 'static_pages#glossary'
- # get '/search', to: 'search#search'
   get '/index', to: 'search#index'
   get '/faq', to: 'static_pages#faq'
   get '/about', to: 'static_pages#about'

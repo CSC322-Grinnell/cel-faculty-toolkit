@@ -7,5 +7,5 @@ class Toolkit < ApplicationRecord
   # video 4
   # podcast 5
   include PgSearch
-  pg_search_scope :search, against: [:name, :content]
+  pg_search_scope :search, against: [:name, :content], using: { tsearch: { prefix: true } }
 end
