@@ -24,18 +24,34 @@ $dark-purple: #20004B;
     color: $dark-purple;
     padding-bottom: 10px;
 }
+.Center { 
+    width:200px; 
+    height:200px; 
+    position: fixed; 
+    background-color: blue; 
+    top: 50%; 
+    left: 50%; 
+    margin-top: -100px; 
+    margin-left: -100px; 
+} 
 
 /* Home Summary: description*/
 
 .home_summary {
     color: rgb(0, 0, 0);
     font-family: Arial, serif;
-    font-size: 17px;
+    font-size: 2.5vmin;
     font-weight: 400;
-    margin-top: -90px;
-    width: 40%;
-    float: right;
-    margin-right: -20px;
+    margin-top: -100px;
+    margin-left: -100px;
+    text-align: left;
+    width: 60vmin;
+    height:10vmin; 
+    left: 50%;
+    position: absolute; 
+    padding-top: 40px;
+    
+
 
     p {
         text-align: end;
@@ -43,7 +59,7 @@ $dark-purple: #20004B;
 
     /* Inner class to add special style to "A digital toolbox"*/
     .title {
-        font-size: 35px;
+        font-size: 4vmin;
         font-weight: bold;
         color: #230F4F;
         p {
@@ -52,40 +68,8 @@ $dark-purple: #20004B;
     }
 }
 
-/*The purple base of the two circles*/
 
-.circleBase {
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-}
-
-/*Community Partner circle*/
-
-#home_community_partner {
-    width: 300px;
-    float: left;
-
-    div {
-        background-color: $lavender;
-        margin-top: -200px;
-        margin-right: -80px;
-        width: 230px;
-        height: 230px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-        color: $purple;
-    }
-    div:hover{
-        color: #000;
-        text-decoration: underline;
-    }
-    
-}
 
 /*Search circle*/
 
@@ -225,6 +209,33 @@ $dark-purple: #20004B;
 
 }
 
+/* Image tagging for image tiles */
+.tile { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   display: block;
+}
+
+h3 { 
+   
+}
+
+.whiteTextOverride {
+    position: absolute; 
+    bottom: 1vh; 
+    left: 10px; 
+    width: 100%; 
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 5vmin !important;
+}
+
+.purpleTextOverride {
+    color: purple !important;
+    font-weight: bold !important;
+    font-size: 50px !important;
+}
+
 /* UI CHANGES FOR DIFFERENT SCREEN SIZES*/
 
 /* When collapsing browsers, adjust body padding so that it would not be obscured by navbar*/
@@ -302,23 +313,6 @@ $dark-purple: #20004B;
 
             .glyphicon {
                 font-size: 20px;
-            }
-        }
-
-        .home_summary {
-            margin-right: 10px;
-            font-size: medium;
-            margin-top: -380px;
-            line-height: 20px;
-            width: 33%;
-
-            p {
-                .title {}
-            }
-            .title {
-                line-height: 40px;
-                font-size: 30px;
-                margin-left: 50px;
             }
         }
 
