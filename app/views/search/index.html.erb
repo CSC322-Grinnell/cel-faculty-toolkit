@@ -1,0 +1,22 @@
+<% provide(:title, "Search") %>
+<h1>Search</h1>
+
+<form>
+<input type="text" name="query" id="query" style="width: 500px; outline:none;"  placeholder="I want to find...">
+<input type="submit" name="commit" id="search-button" style="width: 100px;" value="Search" class="btn btn-default">
+</form>
+
+<% if @toolkits.nil? %>
+<% elsif @toolkits.empty? %>
+	<h3> No search results </h3>
+<% else %>
+	<h2 style="margin-top: 50px; color: rgb(35, 15, 79)"><%= "Showing " + @toolkits.length.to_s + " results for: \"" + params[:query] + "\"" %></h2>
+	<% @toolkits.each do |toolkit| %>
+		<%= link_to toolkit.url.to_s do %>
+			<div class="search-result">
+				<h3><%= toolkit.name %></h3>
+				<p style="color: rgb(88, 88, 88); padding-top: 20px;"><%= toolkit.content.to_s.truncate_words(30) %><p>
+			</div>
+		<% end %>
+	<% end %>
+<% end %>

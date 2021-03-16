@@ -16,9 +16,6 @@ class StaticPagesController < ApplicationController
     }
   end
 
-  def search
-  end
-
   def faq
   end
 
