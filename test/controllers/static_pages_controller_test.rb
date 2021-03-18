@@ -20,7 +20,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get search" do
-    get search_path
+    get index_path
     assert_response :success
     assert_select "title", "Search | #{@base_title}"
   end

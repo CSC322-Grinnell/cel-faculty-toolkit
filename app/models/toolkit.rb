@@ -6,6 +6,6 @@ class Toolkit < ApplicationRecord
   # pdf 3
   # video 4
   # podcast 5
-  include PgSearch
+  include PgSearch::Model
   pg_search_scope :search, against: [:name, :content], using: { tsearch: { prefix: true } }
 end

@@ -18,6 +18,6 @@ csv.each do |row|
    t.save
 end
 # Print the confirm statement
-puts "There are now #{Toolkit.count} rows in the Toolkit table."
+# puts "There are now #{Toolkit.count} rows in the Toolkit table."
 
 # The current toolkit_database csv file does not contain all information from formal database.
