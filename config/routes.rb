@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/faq', to: 'static_pages#faq'
   get '/about', to: 'static_pages#about'
   get '/what_is_cel', to: 'static_pages#what_is_cel'
+  get '/intro_to_cel', to: 'static_pages#intro_to_cel'
   get '/community_partnerships', to: 'static_pages#community_partnerships'
   get '/course_design', to: 'static_pages#course_design'
   get '/implementation', to: 'static_pages#implementation'
