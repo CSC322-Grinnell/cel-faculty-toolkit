@@ -36,6 +36,9 @@ This project consists of a home page with clickable image tiles to static pages,
 
 ○ 	[Github](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github)
 
+○ 	[PostgreSQL Desktop Client](https://www.postgresql.org/download/)
+
+
 You can either use your local machine or cloud environment. However, it's highly recommended to use [Amazon Cloud 9](https://aws.amazon.com/cloud9/) to work on this project that satisfy most of the above development prequesites. 
 
 ### Getting started:
@@ -74,6 +77,8 @@ If the test suite passes, you’ll be ready to seed the database with sample use
 $ rails db:seed
 $ rails server
 ```
+Note: be sure to have the PostgreSQL desktop client running (otherwise you will run into a server connection error)
+
 Now, visit http://localhost:3000/ in any browser in your local machine to see the running app
 
 ## 3. Deployment
