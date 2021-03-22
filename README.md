@@ -6,11 +6,11 @@ Visit the current web app [here](https://cel-toolkit.herokuapp.com/).
 
 ### Background and purpose:
 
-This project is a website for the Community Engaged Learning toolkit for Grinnell faculty. Its purpose is to support faculty in community engaged courses and act as a central place for faculty to go to when they have questions. The client hopes for an interactive website that supports searching, exploring, and queries. The most important feature is searching (which has been implemented using Google search engine) that enables users to enter search terms and find related resources which can be in the form of different media types such as video, text, audio, etc...
+This project is a website for the Community Engaged Learning toolkit for Grinnell faculty. Its purpose is to support faculty in designing community engaged courses and act as a central place for faculty to go to when they have questions. The client hopes for an interactive website that supports searching, exploring, and finding inspiration for CEL courses. The most important feature is searching (which has been implemented using the pgsearch gem) that enables users to enter search terms and find related resources. The site is also easily navigatable with interactive elements like clickable tiles to static pages and an ARCGIS map of community partners.
 
 ### App Structures
 
-This project consists of glossary, search and many different static pages. In static pages, main contents are stored with a sidebar that allows users to jump to specific sections. Users can access glossary and search through the top navbar or homepage. Glossary provides users with a list of important terms for CEL, their explanations and associated sections that users can click. Search allows users to get related pages that contain the term they put in the search bar. The current search feature is programmed using Google search engine. No extra gem is used beside those used in standard rails application.
+This project consists of a home page with clickable image tiles to static pages, to static pages with information on CEL courses, a Syllabi page with clickable syllabi examples from past courses, and a map of community partners made in ARCGIS with a legend. In static pages, main contents are stored with a sidebar that allows users to jump to specific sections. Users can access glossary and search through the top navbar or homepage. Glossary provides users with a list of important terms for CEL, their explanations and associated sections that users can click. Search allows users to get related pages that contain the term they put in the search bar. The current search feature is programmed using pgsearch, which allows a user to search all the content of the site. 
 
 ### Reference resources
 ○ 	[Ruby_on_Rails tutorial](http://www.railstutorial.org)
@@ -81,6 +81,26 @@ Now, visit http://localhost:3000/ in any browser in your local machine to see th
 To deploy the sample app to production, you’ll need a Heroku account as instructed [Section 1.4, “Deploying”](https://www.railstutorial.org/book/beginning#sec-deploying) in the tutorial. Please contact the class instructor for access and ownership of all current account credentials being use, such as Trello board, github contribution access, gmail, heroku, etc.
 
 ## 4. Work in progress
+
+### Updated Remaining Tasks as of Spring 2021
+
+### Asset pipeline 
+One concern is the asset pipeline for images and syllabi. We encountered an issue very late in the term where when you clicked the syllabi on the static page, the site crashed. This was an issue with the site recognizing where the syllabi were as assets. Although we believe this function is fully fixed, as the assets are moved and evolve, this is an issue to watch out for. 
+
+### Intro to CEL Page
+Late in the term, we received a powerpoint from the community partner with materials related to intro-to-CEL. We didn’t have time to fully transcribe it, so the powerpoint is just linked on that static page. However, this is more of a workaround fix, and the material should probably be transcribed into paragraphs on the static page.
+
+### Top Nav Wraparound
+The top navbar/header has so many clickable headers that sometimes it wraps down to two lines, which the community partner expressed isn’t an issue, but it could be an aesthetic choice that will shift in the future. 
+
+### Search titles
+The search currently allows you to search the titles of the site, but searching static page titles returns results that don’t have content previews. This means the search works, but doesn’t work in the best possible way for the user, with this flaw that only happens with the static page titles themselves. The solution to this would be to rework how we store the searchable titles in the table we use for the pgsearch gem.
+
+### Refactoring
+One thing to refactor is the dynamic resizing of the page. We refactored this quite a bit, but there could be more to do. The previous team used many conditionals for how to format css in the stylesheets based on screen size, and we were able to remove some by switching to viewport width (vw, vmin) sizing, but we didn’t fully refactor this and there may be more opportunities to make the code more efficient.
+
+
+### Remaining Tasks as of Fall 2020
 
 ### Search feature
 The search algorithm we implemented is embedded Google search, but it’s not the most optimal now and this search engine is still crawling/learning all pages in our website, thus some words can be searched while some other words can’t (hopefully it’ll be fixed in the next weeks or so since Google is fixing some problems with their programmable search engine and recrawling website data.
